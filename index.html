@@ -5,40 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Maze - Game by JoeTheorium</title>
+    <title>Maze, the Game. By JoeTheorium</title>
 </head>
 <body>
-    <div id="page">
-        <div id="Message-Container">
-            <div id="message">
-                <h1>C R A C K!</h1>
-                <p>Give me a star pls 🎈🤗</p>
-                <p id="moves"></p>
-                <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container')" value="Nizze!" />
+    <div id="game-container-1" class="game-container">
+        <div id="map-and-controls">
+
+            <div id="game-map-1" class="game-map">
+                <div id="tiles" class="layer"></div>
+                <div id="sprites" class="layer"></div>
+                <div id="success-msg">C R A C K !</div>
             </div>
         </div>
-        <br>
-        <div id="menu">
-            <div class="custom-select">
-                <select id="diffSelect">
-                    <option value="10">Easy</option>
-                    <option value="15">Medium</option>
-                    <option value="25">Hard</option>
-                    <option value="38">Extreme</option>
-                </select>
-            </div>
-            <input id="startMazeBtn" type="button" onclick="makeMaze()" value="Start" />
-        </div>
-        <div id="view">
-            <div id="mazeContainer">
-                <canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
-            </div>
-        </div>
-        <p id="instructions">Use arrow keys to move the bot to the home.</p>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+    <p id="text-1" class="text">
+        Use cursor keys or buttons to move the circle.
+    </p>p>
+
     <script src="./script.js"></script>
 </body>
 </html>
