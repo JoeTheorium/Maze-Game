@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 html,
-body {
+body{
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -13,5 +13,17 @@ body {
     right: 0;
     background-color: #fff;
     font-family: 'Poppins', sans-serif;
+}
+
+#view{
+    margin-top: 30px;
+}
+
+#mazeContainer{
+    top: 15px;
+    opacity: 0;
+    display: inline-block;
+    margin: auto;
+    border-radius: 10px;
 }
 
